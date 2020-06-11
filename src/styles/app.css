@@ -1,3 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Raleway&display=swap');
+
+:root {
+  --background: #cfd9ce;
+  --gray-accent: #6b7478;
+  --green: #7c8e51;
+}
+
 body {
   margin: 0;
+  display: flex;
+
+  flex-direction: column;
+  background-color: var(--background);
+  font-family: Raleway;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  font-family: Lexend Tera;
+  font-size: 24px;
+  background-color: var(--gray-accent);
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.options {
+  border: 2px solid var(--gray-accent);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+}
+
+.mainSelect {
+  padding: 5px 35px 5px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.ageSelect {
+  padding: 5px 35px 5px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+}
+.top {
+  display: flex;
+}
+
+.quarter {
+  padding: 50px;
+}
+
+.select-label {
+  margin-bottom: 10px;
+}
+.top-left {
+  padding: 20px;
+  /* background-color: var(--green); */
+  width: 40%;
+  height: 40vh;
+}
+
+.top-left-map {
+  display: flex;
+}
+
+.top-left-key {
+  /* border: 2px solid var(--gray-accent); */
+  padding: 20px;
+  margin: 30px;
+}
+
+.top-right {
+  padding: 20px;
+
+  width: 40%;
+  height: 30vh;
+}
+
+.bottom-left {
+  padding: 20px;
+}
+
+.bottom-right {
+  padding: 20px;
+}
+
+.yearSelect {
+  border: 0;
+  outline: 0;
+}
+
+.color-chooser {
+  color: #3d677b;
+}
+
+.section-title-container {
+  background-color: var(--gray-accent);
+  padding: 2px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.key-color-high {
+  background-color: #9a4832;
+  padding: 2px;
+}
+
+.key-color-low {
+  background-color: #3d677b;
+  padding: 2px;
 }

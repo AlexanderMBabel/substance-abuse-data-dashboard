@@ -2,10 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>WebPack starter</title>
+    <title>Vizualizing substance abuse data</title>
   </head>
   <body>
-    <p>Webpack is setup and working</p>
-    </div>
+    <header>Vizualizing substance abuse</header>
+
+    <section class="options">
+      <div class="select-group">
+        <label class="select-label" for="yearSelect">Year</label>
+        <select
+          name="yearSelect"
+          id="year-select"
+          class="mainSelect"
+          placeholder="Year"
+        >
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+          <option value="2007">2007</option>
+          <option value="2008">2008</option>
+          <option value="2009">2009</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label class="select-label" for="age-group">Age group</label>
+        <select name="age-group" id="age-select" class="mainSelect">
+          <option value="12">12-17</option>
+          <option value="18">18-25</option>
+          <option value="26">26+</option>
+        </select>
+      </div>
+      <div class="select-group">
+        <label for="substanceSelect" class="select-label">Substance</label>
+        <select name="substanceSelect" id="substance-select" class="mainSelect">
+          <option value="Tobacco">Tobacco</option>
+          <option value="Alcohol">Alcohol</option>
+          <option value="Painkiller">Pain killers</option>
+          <option value="Cannabis">Cannabis</option>
+          <option value="Illicit">illicit substances</option>
+        </select>
+      </div>
+    </section>
+    <section class="top">
+      <div class="top-left quarter">
+        <div class="section-title-container">
+          <h3 class="section-title">Substance abuse rates by state</h3>
+        </div>
+        <div class="top-left-map">
+          <svg class="mapSvg"></svg>
+          <div class="top-left-key">
+            <p class="key-color-low">Lower Rate</p>
+            <p class="key-color-high">Higher Rate</p>
+          </div>
+        </div>
+      </div>
+      <div class="top-right quarter">
+        <div class="section-title-container">
+          <h3 class="section-title">Abuse rates of all substances by age</h3>
+        </div>
+      </div>
+    </section>
+    <section class="bottom">
+      <div class="bottom-left quarter"></div>
+      <div class="bottom-right quarter"></div>
+    </section>
+    <footer></footer>
   </body>
 </html>
