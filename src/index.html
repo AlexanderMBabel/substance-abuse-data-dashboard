@@ -53,11 +53,11 @@
     <section class="top">
       <div class="top-left quarter">
         <div class="section-title-container">
-          <h3 class="section-title">Substance abuse rates by state</h3>
+          <p class="section-title">Substance abuse rates by state</p>
         </div>
-        <div class="top-left-map">
+        <div class="graph">
           <svg class="mapSvg"></svg>
-          <div class="top-left-key">
+          <div class="key">
             <p class="key-color-low">Lower Rate</p>
             <p class="key-color-high">Higher Rate</p>
           </div>
@@ -65,14 +65,32 @@
       </div>
       <div class="top-right quarter">
         <div class="section-title-container">
-          <h3 class="section-title">Abuse rates of all substances by age</h3>
+          <p class="section-title">Abuse rates of all substances by age</p>
+        </div>
+        <div class="graph">
+          <svg class="pieSvg"></svg>
+          <div class="key">
+            <p class="key-color-alcohol">Alcohol</p>
+            <p class="key-color-cannabis">Cannabis</p>
+            <p class="key-color-illicit">Illicit</p>
+            <p class="key-color-painkiller">Pain Killers</p>
+            <p class="key-color-tobacco">Tobacco</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="bottom">
-      <div class="bottom-left quarter"></div>
+      <div class="bottom-left quarter">
+        <div class="section-title-container">
+          <p class="section-title">All years and substances by state</p>
+        </div>
+        <div class="graph">
+          <svg class="lineSvg"></svg>
+        </div>
+      </div>
       <div class="bottom-right quarter"></div>
     </section>
+    <div class="tooltip"></div>
     <footer></footer>
   </body>
 </html>

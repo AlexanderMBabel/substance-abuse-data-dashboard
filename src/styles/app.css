@@ -3,6 +3,7 @@
 :root {
   --background: #cfd9ce;
   --gray-accent: #6b7478;
+  --light-gray: #a7b3b8;
   --green: #7c8e51;
 }
 
@@ -17,7 +18,7 @@ body {
 
 section {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 header {
@@ -33,7 +34,7 @@ header {
   border: 2px solid var(--gray-accent);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 20px;
+  padding: 5px;
 }
 
 .mainSelect {
@@ -77,15 +78,15 @@ header {
 .top-left {
   padding: 20px;
   /* background-color: var(--green); */
-  width: 40%;
+  width: 60%;
   height: 40vh;
 }
 
-.top-left-map {
+.graph {
   display: flex;
 }
 
-.top-left-key {
+.key {
   /* border: 2px solid var(--gray-accent); */
   padding: 20px;
   margin: 30px;
@@ -116,7 +117,7 @@ header {
 }
 
 .section-title-container {
-  background-color: var(--gray-accent);
+  background-color: var(--light-gray);
   padding: 2px;
   text-align: center;
   color: white;
@@ -132,4 +133,90 @@ header {
 .key-color-low {
   background-color: #3d677b;
   padding: 2px;
+}
+
+.key-color-alcohol {
+  background-color: #414141;
+  padding: 2px;
+}
+.key-color-cannabis {
+  background-color: #6b7478;
+  padding: 2px;
+}
+.key-color-illicit {
+  background-color: #cf7478;
+  padding: 2px;
+}
+.key-color-painkiller {
+  background-color: #7c8e51;
+  padding: 2px;
+}
+.key-color-tobacco {
+  background-color: #384d47;
+  padding: 2px;
+}
+
+.pieSvg {
+  /* background-color: var(--green); */
+  padding: 20px;
+}
+
+.tooltip {
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+/* Line Chart */
+.lineSvg path {
+  fill: none;
+  stroke-width: 5;
+  stroke: red;
+}
+.lineSvg path.line-0 {
+  stroke: #cf7478;
+}
+.lineSvg path.line-1 {
+  stroke: #3d677b;
+  stroke-dasharray: 1;
+}
+.lineSvg path.line-2 {
+  stroke: #384d47;
+  stroke-dasharray: 2;
+}
+.lineSvg path.line-3 {
+  stroke: #7c8e51;
+  stroke-dasharray: 3;
+}
+.lineSvg path.line-4 {
+  stroke: #414141;
+  stroke-dasharray: 4;
+}
+
+.line-label {
+  font-size: 12px;
+  font-family: Raleway;
+  color: #706f6f;
+}
+
+/* AXES */
+/* ticks */
+.axis line {
+  stroke: #706f6f;
+  stroke-width: 0.5;
+  shape-rendering: crispEdges;
+}
+
+/* axis contour */
+.axis path {
+  stroke: #706f6f;
+  stroke-width: 0.7;
+  shape-rendering: crispEdges;
+}
+
+/* axis text */
+.axis text {
+  fill: #2b2929;
+  font-family: Georgia;
+  font-size: 120%;
 }
